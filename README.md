@@ -7,7 +7,7 @@ docker login
 docker push videl/openjdk-8-jdk-alpine-apache-skywalking-agent
 ```
 
-You can open the image with: `docker run -it --rm videl/openjdk-8-jdk-alpine-apache-s kywalking-agent:latest /bin/ash`
+You can open the image with: `docker run -it --rm videl/openjdk-8-jdk-alpine-apache-skywalking-agent:latest /bin/ash`
 
 Will look like this:
 
