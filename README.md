@@ -1,5 +1,14 @@
 # openjdk-8-jdk-alpine-apache-skywalking-agent
 
+Hey guys, this is a Docker image to have OpenJDK 8 with the Apache Skywalking Agent. I use it to build apps that are monitored by Apache Skywalking.
+
+You can check what happens with the build in the Dockerfile.
+Apache Skywalking version: 6.1.0.
+Link: http://skywalking.apache.org/
+
+
+## Build manually
+
 Build with: `docker build -t videl/openjdk-8-jdk-alpine-apache-skywalking-agent .`
 Push with: 
 ```
