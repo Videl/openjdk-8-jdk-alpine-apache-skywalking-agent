@@ -6,6 +6,17 @@ You can check what happens with the build in the Dockerfile.
 Apache Skywalking version: 6.1.0.
 Link: http://skywalking.apache.org/
 
+## Important
+To use this image, be sure to replace the agent.config file. It's here: `/skywalking/agent/config/agent.config`
+
+In your Dockerfile, you should have something looking like this:
+
+```
+COPY docker/dev.agent.config /skywalking/agent/config/agent.config
+```
+
+
+### Build info
 
 ## Build manually
 
@@ -15,6 +26,8 @@ Push with:
 docker login
 docker push videl/openjdk-8-jdk-alpine-apache-skywalking-agent
 ```
+
+## Debug
 
 You can open the image with: `docker run -it --rm videl/openjdk-8-jdk-alpine-apache-skywalking-agent:latest /bin/ash`
 
